@@ -43,7 +43,7 @@ export default class App extends Component {
 
  async getWeather(latitude, longitude) {
   //console.log(apikey)
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9d63ebfa244bc956de539a7a69fa9cb3&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9d63ebfa244bc956de539a7a69fa9cb3&units=metric`;
   //console.log("url",url)
   let response = await fetch(url);
   let data = await response.json();
